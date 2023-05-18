@@ -1,0 +1,587 @@
+.mainWrap {
+  width: 100%;
+  height: auto;
+  background: $midBG;
+  position: relative;
+
+  //輪播圖
+  .ad {
+    width: 100%;
+    //min-width: 1000px;
+    position: relative;
+
+    .single-item {
+      margin: 0;
+
+      .slick-slide {
+        outline: none;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .slick-arrow {
+        z-index: 1;
+      }
+
+      .slick-dots {
+        bottom: 0px;
+
+        li {
+          margin: 0;
+
+          &.slick-active {
+            button {
+              &::before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        &::before {
+          width: 8px;
+          height: 8px;
+          background: $mqBtn;
+          border-radius: 50%;
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  //導航列
+  nav {
+    width: 100%;
+    height: 96px;
+    background: $navBG;
+    padding-top: 14px;
+    position: relative;
+
+    ul {
+      width: 100%;
+      max-width: 894px;
+      display: flex;
+      margin: 0 auto;
+
+      li {
+        width: 120px;
+        height: 84px;
+        white-space: nowrap;
+        margin-left: 35px;
+        text-align: center;
+        padding: 9px 0 0;
+        cursor: pointer;
+
+        .navIcon {
+          width: 41px;
+          height: 42px;
+          margin: 0 auto 4px;
+
+          &.sport {
+            background-position-x: 0%;
+          }
+          &.live {
+            background-position-x: 20%;
+          }
+          &.slot {
+            background-position-x: 40%;
+          }
+          &.fish {
+            background-position-x: 60%;
+          }
+          &.poker {
+            background-position-x: 80%;
+          }
+          &.ticket {
+            background-position-x: 100%;
+          }
+        }
+
+        a {
+          color: $lightfont;
+          font-size: 15px;
+          font-weight: bold;
+        }
+
+        &:hover,
+        &:active,
+        &.active {
+          background: $navHov;
+          border-radius: 5px 5px 0 0;
+          border: 2px solid $liHovBorder;
+          text-shadow: 0 0 3px $lightfont;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .center {
+    max-width: 1666px;
+    width: 90%;
+    margin: 0 auto;
+
+    .wrap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      padding: 80px 0 0;
+      box-sizing: border-box;
+
+      .side_Left {
+        width: 20%;
+        min-width: 189px;
+        height: auto;
+        margin-right: 2%;
+
+        .popBlock {
+          width: 100%;
+          min-width: 194px;
+          height: 251px;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px 1px rgb(0, 0, 0, 15%);
+          margin: 0 0 19px;
+          position: relative;
+          cursor: pointer;
+
+          &:hover,
+          &:active,
+          &.active {
+            filter: brightness(0.9);
+          }
+
+          &.left02 {
+            position: relative;
+
+            &::before {
+              content: " ";
+              width: 84px;
+              height: 77px;
+              position: absolute;
+              bottom: 68px;
+              left: -28px;
+            }
+          }
+
+          .popInfo {
+            width: 100%;
+            min-width: 194px;
+            height: 69px;
+            border-radius: 0 0 5px 5px;
+            background: $recInfoBG;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+
+            p {
+              font-size: 14px;
+              font-weight: bold;
+              white-space: nowrap;
+              margin: auto;
+              position: relative;
+              z-index: 5;
+
+              span {
+                color: $tagfont;
+                font-size: 16px;
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+      }
+
+      .middle_Area {
+        width: 58%;
+        height: auto;
+
+        .top {
+          width: 100%;
+          height: 190px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 11px;
+
+          .theme {
+            width: 48%;
+            height: 189px;
+            position: relative;
+
+            .gWrapBox {
+              width: 67%;
+              height: 98px;
+              overflow: hidden;
+              display: flex;
+              position: relative;
+
+              .gameWrap {
+                width: 100%;
+                height: auto;
+                display: flex;
+                transition: 0.5s all;
+
+                li {
+                  width: 98px;
+                  height: auto;
+                  margin-right: 12px;
+                  cursor: pointer;
+
+                  &:hover,
+                  &:active,
+                  &.active {
+                    transform: scale(1.15);
+                    transition: ease-in 0.3s;
+                  }
+
+                  img {
+                    width: 98px;
+                    height: 98px;
+                  }
+                }
+              }
+            }
+
+            .nextBtn,
+            .nextBtnC {
+              width: 39px;
+              height: 39px;
+              background: $nextBtn_BG;
+              border-radius: 40px;
+              padding: 5px 17px;
+              position: absolute;
+              top: 43%;
+              right: 29%;
+              pointer-events: none;
+
+              .nextIcon {
+                width: 7px;
+                height: 21px;
+                filter: brightness(9.9);
+              }
+
+              &.active {
+                pointer-events: visible;
+              }
+            }
+          }
+        }
+
+        .bottom {
+          width: 100%;
+          height: auto;
+
+          .inWrap {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 48%);
+            grid-template-rows: repeat(2, 122px);
+            column-gap: 26px;
+            row-gap: 24px;
+
+            .gameBlock {
+              width: 100%;
+              height: 122px;
+              background: $gameBlock_BG;
+              border-radius: 5px;
+              padding: 15px 70px 15px 15px;
+              box-sizing: border-box;
+              box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 15%);
+              display: flex;
+              position: relative;
+              cursor: pointer;
+
+              button {
+                width: 26px;
+                height: 26px;
+                background: $tagfont;
+                border-radius: 40px;
+                padding: 7px 10px;
+                position: absolute;
+                top: 40%;
+                right: 25px;
+                animation: xmove 0.4s ease-in-out infinite alternate;
+                @keyframes xmove {
+                  from {
+                    right: 32px;
+                  }
+                  to {
+                    right: 35px;
+                  }
+                }
+
+                .gBlockarrow {
+                  width: 7px;
+                  height: 13px;
+                  filter: brightness(59.9);
+                }
+              }
+
+              &:hover,
+              &:active,
+              &.active {
+                filter: brightness(0.95);
+              }
+
+              .gamePic {
+                width: 92px;
+                height: 92px;
+                margin-right: 20px;
+              }
+
+              .gameInfo {
+                width: 70%;
+                height: auto;
+                margin: auto 0;
+
+                p {
+                  color: $mainfont;
+                  font-size: 15px;
+
+                  &.name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .side_Right {
+        width: 17%;
+        min-width: 187px;
+        height: auto;
+        margin-left: 2%;
+
+        .searchBox {
+          width: 100%;
+          height: 42px;
+          background: $sub;
+          padding: 8px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 39px;
+
+          input {
+            width: 88%;
+            height: 28px;
+            border: none;
+            padding: 9px 16px;
+
+            &::placeholder {
+              padding: 9px 0;
+            }
+          }
+
+          button {
+            width: 22px;
+            height: 22px;
+            background: $sub;
+
+            .searchIc {
+              width: 22px;
+              height: 28px;
+            }
+          }
+        }
+
+        .newGame {
+          width: 100%;
+          height: auto;
+          display: table;
+          position: relative;
+
+          &::before {
+            content: " ";
+            width: 119px;
+            height: 75px;
+            position: absolute;
+            top: -67px;
+            right: 0;
+          }
+
+          li {
+            width: 100%;
+            height: auto;
+            position: relative;
+            cursor: pointer;
+
+            &:hover,
+            &:active,
+            &.active {
+              transform: scale(1.1);
+              filter: brightness(0.9);
+              transition: ease-in-out 0.2s;
+            }
+
+            //新登場
+            &::before {
+              content: " ";
+              width: 136px;
+              height: 86px;
+              position: absolute;
+              top: -1px;
+              left: 7px;
+              z-index: 5;
+              animation: bump 1s ease-in-out infinite;
+
+              @keyframes bump {
+                0% {
+                  top: 0;
+                }
+
+                50% {
+                  top: 3px;
+                }
+
+                100% {
+                  top: 0;
+                }
+              }
+            }
+
+            //圖片尺寸
+            .newgame {
+              //width: 280px;
+              width: 100%;
+              height: auto;
+              //height: 139px;
+              object-fit: 100%;
+            }
+          }
+        }
+      }
+
+      //標題區塊
+      .titleArea {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 17px;
+
+        .themeTitle {
+          color: $mainfont;
+          font-size: 22px;
+          font-weight: bold;
+          margin-left: 24px;
+          position: relative;
+
+          &::before {
+            content: " ";
+            width: 8px;
+            height: 23px;
+            background: $subfont;
+            position: absolute;
+            top: 0;
+            left: -24px;
+          }
+        }
+
+        button {
+          width: 48px;
+          height: 16px;
+          background: none;
+          color: $mainfont;
+          font-size: 14px;
+          font-weight: bold;
+          display: flex;
+          justify-content: space-between;
+
+          .arrowIcon {
+            width: 7px;
+            height: 21px;
+          }
+        }
+
+        &.right {
+          margin-bottom: 7px;
+        }
+      }
+    }
+
+    .bottomAll {
+      width: 100%;
+      height: 150px;
+      display: flex;
+
+      button {
+        width: 254px;
+        height: 58px;
+        background: $showmoreBtn_BG;
+        border-radius: 50px;
+        color: $lightfont;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 35px;
+        margin: auto;
+        position: relative;
+
+        &::before {
+          content: " ";
+          width: 78px;
+          height: 69px;
+          position: absolute;
+          bottom: -1px;
+          left: -2px;
+          pointer-events: none;
+        }
+
+        &::after {
+          content: " ";
+          width: 14px;
+          height: 18px;
+          position: absolute;
+          top: 20px;
+          right: 32px;
+        }
+
+        &:hover,
+        &:active,
+        &.active {
+          text-shadow: 0 0 3px $lightfont;
+
+          &::before {
+            transform: translate(8px, -1px) scale(1.02);
+            transition: 0.5s 0 ease-in-out;
+          }
+
+          &::after {
+            animation: down 1s ease-in-out infinite;
+
+            @keyframes down {
+              0% {
+                top: 20px;
+              }
+
+              50% {
+                top: 23px;
+              }
+
+              100% {
+                top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+//header
+header .lang::before {
+    background: url(../img/lang_icon.png) no-repeat;
+    background-size: contain;
+}
+
+header .mq_icon {
+    background: url(../img/mqText_icon.png) no-repeat;
+    background-size: contain;
+}
+
+//nav 
+.mainWrap nav ul li .navIcon {
+    background: url(../img/nav_icon.png) no-repeat center;
+    background-size: 600%;
+}
+
+//wrap
+.mainWrap .side_Left .popBlock.left01 {
+    background: url(../img/left01.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .side_Left .popBlock.left02 {
+    background: url(../img/left02.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .side_Left .popBlock.left02::before {
+    background: url(../img/left02_01.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .arrowIcon,
+.mainWrap .nextIcon,
+.mainWrap .middle_Area .bottom .gameBlock .gBlockarrow {
+    background: url(../img/right-arrow.png) no-repeat center;
+    background-size: contain;
+}
+
+.mainWrap .side_Right .searchIc {
+    background: url(../img/search_icon.png) no-repeat center;
+    background-size: 100%;
+}
+
+.mainWrap .side_Right .newGame::before {
+    background: url(../img/newGame_deco.png) no-repeat center;
+    background-size: 100%;
+}
+
+.mainWrap .side_Right .newGame li::before {
+    background: url(../img/newtext.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .bottomAll button::before {
+    background: url(../img/showmoreBtn.png) no-repeat;
+    background-size: contain;
+}
+
+.mainWrap .bottomAll button::after {
+    background: url(../img/downarrow_icon.png) no-repeat;
+    background-size: contain;
+}
+
+aside .backtop {
+    background: url(../img/top-arrow.png) no-repeat;
+    background-size: contain;
+}
+
+footer .leftPic {
+    background: url(../img/footerPic01.png) no-repeat;
+    background-size: contain;
+}
+
+footer .rightPic {
+    background: url(../img/footerPic02.png) no-repeat;
+    background-size: contain;
+}
+
+footer ul li p span::after {
+    background: url(../img/pageHovIc.png) no-repeat;
+    background-size: contain;
+}
+
+footer button::after {
+    background: url(../img/footerBtnHov.png) no-repeat;
+    background-size: contain;
+}

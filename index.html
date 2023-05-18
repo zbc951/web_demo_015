@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/js.jsx"></script>
+    <!-- <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="logo"><a>LOGO</a></div>
+        <div class="rightArea">
+          <!-- 未登入區塊 -->
+          <div class="unLog">
+            <input type="text" placeholder="Eメール" />
+            <input type="text" placeholder="パスワード" />
+            <p class="forgotPW">パスワードをお忘れですか？</p>
+            <button class="login1" type="submit">登入</button>
+            <button class="login2">ログイン</button>
+          </div>
+          <!-- 語言列 -->
+          <div class="lang">
+            <i class="langIcon"></i>
+            <select>
+              <option>日文</option>
+              <option>繁體中文</option>
+              <option>简体中文</option>
+              <option>ENGLISH</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- 文字跑馬燈 -->
+      <div class="mq_text">
+        <div class="mqBox">
+          <i class="mq_icon"></i>
+          <div class="textBox">
+            <p class="content">公告公告公告公告公告公告公告公告公告公告</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainWrap">
+        <!-- banner輪播圖 -->
+        <div class="ad">
+          <ul class="single-item">
+            <li><img class="banner" src="./img/banner.png" /></li>
+            <li><img class="banner" src="./img/banner.png" /></li>
+            <li><img class="banner" src="./img/banner.png" /></li>
+          </ul>
+        </div>
+        <!-- 導航列 -->
+        <nav>
+          <ul>
+            <li class="active">
+              <i class="navIcon sport"></i>
+              <a>スポーツ</a>
+            </li>
+            <li>
+              <i class="navIcon live"></i>
+              <a>ライブカジノ</a>
+            </li>
+            <li>
+              <i class="navIcon slot"></i>
+              <a>スロットマシン</a>
+            </li>
+            <li>
+              <i class="navIcon fish"></i>
+              <a>釣り機</a>
+            </li>
+            <li>
+              <i class="navIcon poker"></i>
+              <a>ボードゲーム</a>
+            </li>
+            <li>
+              <i class="navIcon ticket"></i>
+              <a>たからくじ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="center">
+          <div class="wrap">
+            <!-- 左部 -->
+            <div class="side_Left">
+              <div class="popBlock left01">
+                <div class="popInfo">
+                  <p>
+                    <span>人気NO.1</span>
+                    キャンディーパーティー
+                  </p>
+                </div>
+              </div>
+              <div class="popBlock left02">
+                <div class="popInfo">
+                  <p>
+                    <span>人気NO.2</span>
+                    メイドパーティー
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 中部 -->
+            <div class="middle_Area">
+              <div class="top">
+                <div class="theme">
+                  <div class="titleArea">
+                    <p class="themeTitle">人気ゲーム</p>
+                    <button>全て<i class="arrowIcon"></i></button>
+                  </div>
+                  <div class="gWrapBox">
+                    <ul class="gameWrap hotgame">
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game02.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game03.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game02.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game03.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="nextBtn"><i class="nextIcon"></i></button>
+                </div>
+                <div class="theme">
+                  <div class="titleArea">
+                    <p class="themeTitle">クラシックゲーム</p>
+                    <button>全て<i class="arrowIcon"></i></button>
+                  </div>
+                  <div class="gWrapBox">
+                    <ul class="gameWrap classic">
+                      <li>
+                        <img class="gameImg" src="./img/game04.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game05.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game03.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                      <li>
+                        <img class="gameImg" src="./img/game01.png" />
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="nextBtnC"><i class="nextIcon"></i></button>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="theme">
+                  <div class="titleArea">
+                    <p class="themeTitle">ゲームをお勧めします</p>
+                    <button>全て<i class="arrowIcon"></i></button>
+                  </div>
+                </div>
+                <div class="inWrap">
+                  <div class="gameBlock">
+                    <img
+                      class="gamePic"
+                      src="./img/Roulette-with-trac_low_en.png"
+                    />
+                    <div class="gameInfo">
+                      <p class="name">ボードゲーム</p>
+                      <p class="detail">超楽しいオンラインボードゲーム!</p>
+                    </div>
+                    <button><i class="gBlockarrow"></i></button>
+                  </div>
+                  <div class="gameBlock">
+                    <img
+                      class="gamePic"
+                      src="./img/Super_Sunny_Fruits_en.png"
+                    />
+                    <div class="gameInfo">
+                      <p class="name">ボードゲーム</p>
+                      <p class="detail">超楽しいオンラインボードゲーム!</p>
+                    </div>
+                    <button><i class="gBlockarrow"></i></button>
+                  </div>
+                  <div class="gameBlock">
+                    <img
+                      class="gamePic"
+                      src="./img/super_burning_wins_respin_en.png"
+                    />
+                    <div class="gameInfo">
+                      <p class="name">ボードゲーム</p>
+                      <p class="detail">超楽しいオンラインボードゲーム!</p>
+                    </div>
+                    <button><i class="gBlockarrow"></i></button>
+                  </div>
+                  <div class="gameBlock">
+                    <img
+                      class="gamePic"
+                      src="./img/Kingdom_of_the_Sun_Golden_Age_en.png"
+                    />
+                    <div class="gameInfo">
+                      <p class="name">ボードゲーム</p>
+                      <p class="detail">超楽しいオンラインボードゲーム!</p>
+                    </div>
+                    <button><i class="gBlockarrow"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 右部 -->
+            <div class="side_Right">
+              <div class="sR_rwd">
+                <div class="searchBox">
+                  <input class="search" type="text" placeholder="探す" />
+                  <button class="searchBtn" type="submit">
+                    <i class="searchIc"></i>
+                  </button>
+                </div>
+                <div class="titleArea right">
+                  <p class="themeTitle">新登場ゲーム</p>
+                </div>
+                <ul class="newGame">
+                  <li>
+                    <img class="newgame" src="./img/newGame_Pinata_video.png" />
+                  </li>
+                  <li>
+                    <img class="newgame" src="./img/newGame_BANANA.png" />
+                  </li>
+                  <li>
+                    <img
+                      class="newgame"
+                      src="./img/newGame_HighwayKing_Banner.png"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bottomAll">
+            <button>続きを見る</button>
+          </div>
+        </div>
+      </div>
+      <!-- 懸浮按鈕 -->
+      <aside>
+        <button class="goTop"><i class="backtop"></i>TOP</button>
+      </aside>
+    </main>
+    <footer>
+      <div class="leftPic"></div>
+      <div class="center">
+        <ul>
+          <li>
+            <p class="title active">最新のお知らせ</p>
+            <p class="page">
+              <span><a href="#">人気のお知らせ</a></span>
+            </p>
+            <p class="page">
+              <span><a href="#">一般発表</a></span>
+            </p>
+          </li>
+          <li>
+            <p class="title">VIPメンバー</p>
+            <p class="page">
+              <span><a href="#">私のVIPレベル</a></span>
+            </p>
+          </li>
+          <li>
+            <p class="title">ヘルプセンター</p>
+            <p class="page">
+              <span><a href="#">初心者の助け</a></span>
+            </p>
+            <p class="page">
+              <span><a href="#">一般的な質問</a></span>
+            </p>
+          </li>
+          <li>
+            <p class="title">私たちに関しては</p>
+            <p class="page">
+              <span><a href="#">利用規約</a></span>
+            </p>
+            <p class="page">
+              <span><a href="#">安全性</a></span>
+            </p>
+            <p class="page">
+              <span><a href="#">責任ある賭け</a></span>
+            </p>
+            <p class="page">
+              <span><a href="#">規則</a></span>
+            </p>
+          </li>
+        </ul>
+        <button>
+          <span>24時間顧客サービス</span>
+        </button>
+      </div>
+      <div class="rightPic"></div>
+    </footer>
+  </body>
+</html>
